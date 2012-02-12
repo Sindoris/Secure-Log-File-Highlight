@@ -1,0 +1,10 @@
+In my continued journey to learn Perl, I decided to create a simple script that would highlight certain events in my /var/log/secure log file.
+The below script will highlight lines that have “Accepted” — in yellow.  Also, it will highlight any “sudo” in red.
+Most of my secure logs are short; however, I created a command line argument -l that will allow you to pause after a set number of lines.
+
+Feel free to use/abuse this script as you see fit.  The concept is useful for other log files.
+
+From the command line (with the script having execute permission):
+$ sudo ./login_chk.pl -l 15 /var/log/secure
+
+The -l argument is optional.  The file directory/name is required. 
